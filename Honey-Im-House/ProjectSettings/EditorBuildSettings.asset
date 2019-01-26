@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
-    guid: 86a1ea8896f94b947b0b67bad357a917
-  - enabled: 0
+    path: Assets/Scenes/JakeTitle.unity
+    guid: 52a65a8b4cdaf8d499ed60e012984b5f
+  - enabled: 1
+    path: Assets/Scenes/JakeHouse.unity
+    guid: 6d681b3472a8c4a40a2f0ddb45407089
+  - enabled: 1
     path: Assets/Scenes/HouseRotateTest.unity
     guid: b5e910c25a549cf47b84911c141d8c4d
   - enabled: 1

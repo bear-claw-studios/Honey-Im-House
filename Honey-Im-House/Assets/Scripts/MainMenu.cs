@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("HouseRotateTest");
+        SceneManager.LoadScene("JakeHouse");
     }
 
     public void QuitGame()
