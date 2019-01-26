@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseRotateTest.unity
     guid: b5e910c25a549cf47b84911c141d8c4d
+  - enabled: 1
+    path: Assets/Scenes/SimplerRotationTest.unity
+    guid: a05125d57a9b07b4b9f3ab4867337b03
   m_configObjects: {}
