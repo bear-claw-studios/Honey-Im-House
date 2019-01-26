@@ -264,7 +264,11 @@ MonoBehaviour:
   h: 0
   v: 0
   rsh: 0
+  threshold: 0
   lerpRate: 0
+  diffX: 0
+  diffY: 0
+  diffZ: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +417,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 764017612, guid: b9e7e300fc5166441ae1c73fc4623805, type: 3}
+      propertyPath: lerpRate
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9e7e300fc5166441ae1c73fc4623805, type: 3}
 --- !u!1 &1119477420
@@ -452,7 +460,11 @@ MonoBehaviour:
   h: 0
   v: 0
   rsh: 0
+  threshold: 0
   lerpRate: 0
+  diffX: 0
+  diffY: 0
+  diffZ: 0
 --- !u!54 &1119477422
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HouseController : MonoBehaviour
 {
+    //Component reference
     Rigidbody rb;
 
     public float rotateSpeed;
@@ -24,12 +25,12 @@ public class HouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateDifference();
         //Basic rotation
         h = Input.GetAxis("LeftStickHorizontal");
         v = Input.GetAxis("LeftStickVertical");
         rsh= Input.GetAxis("RightStickHorizontal");
 
+        //Prevents any trace inputs from the controller from manipulating the house
         if (Mathf.Abs(h) < threshold)
             h = 0.0f;
         if (Mathf.Abs(v) < threshold)
@@ -38,57 +39,24 @@ public class HouseController : MonoBehaviour
             rsh = 0.0f;
 
         Vector3 input = new Vector3(v, rsh, h);
-
         transform.Rotate(input * rotateSpeed);
     }
-    
-    void UpdateDifference()
-    {
-        diffX = Mathf.Abs(transform.rotation.eulerAngles.x - origin.x);
-        diffY = Mathf.Abs(transform.rotation.eulerAngles.y - origin.y);
-        diffZ = Mathf.Abs(transform.rotation.eulerAngles.z - origin.z);
-    }
-    
 
     private void FixedUpdate()
     {
         if (Input.GetButton("Return"))
-            HandleNormalRotation();
+            ReturnToOriginalRotation();
     }
 
     //Return cube to its original orientation
-    public void HandleNormalRotation()
+    public void ReturnToOriginalRotation()
     {
-        //Whatever man
-       
-        Vector3 thresholdVector = new Vector3(1.0f, 1.0f, 1.0f);
-
-        //bool withinThreshold = IsWithinThreshold();
-
         if (transform.rotation != Quaternion.Euler(origin))
-        //if(!withinThreshold)
         {
             Quaternion current = transform.rotation;
-            //Vector3 currentRotation = current.eulerAngles;
-            //Using the lerp function allows a smoother rotation towards the origin instead of snapping into place
-            //Vector3 newRotation = Vector3.Lerp(currentRotation, origin, lerpRate);
-            //Quaternion rotationSet = Quaternion.Euler(newRotation);
-            //transform.rotation = rotationSet;
-
+            //Spherical lerp call to smoothly rotate the cube while the "Return" button is held down
             Quaternion newRotation = Quaternion.Slerp(current, Quaternion.Euler(origin), lerpRate);
             transform.rotation = newRotation;        
         }
-    }
-
-    public bool IsWithinThreshold()
-    {
-        if (diffX < 5.0f)
-            return true;
-        else if (diffY < 5.0f)
-            return true;
-        else if (diffZ < 5.0f)
-            return true;
-        else
-            return false;
     }
 }
