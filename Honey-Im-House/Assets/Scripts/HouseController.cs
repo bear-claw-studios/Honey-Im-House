@@ -8,6 +8,8 @@ public class HouseController : MonoBehaviour
 
     public float rotateSpeed;
     public float h, v, rsh;
+    //input threshold for h, v, and rsh
+    public float threshold;
 
     public float lerpRate;
 
@@ -23,12 +25,23 @@ public class HouseController : MonoBehaviour
         h = Input.GetAxis("LeftStickHorizontal");
         v = Input.GetAxis("LeftStickVertical");
         rsh= Input.GetAxis("RightStickHorizontal");
+
+        if (Mathf.Abs(h) < threshold)
+            h = 0.0f;
+        if (Mathf.Abs(v) < threshold)
+            v = 0.0f;
+        if (Mathf.Abs(rsh) < threshold)
+            rsh = 0.0f;
+
         Vector3 input = new Vector3(v, rsh, h);
 
+        transform.Rotate(input * rotateSpeed);
+    }
+
+    private void FixedUpdate()
+    {
         if (Input.GetButton("Return"))
             HandleNormalRotation();
-
-        transform.Rotate(input * rotateSpeed);
     }
 
     //Return cube to its original orientation
