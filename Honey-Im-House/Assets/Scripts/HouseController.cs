@@ -23,8 +23,6 @@ public class HouseController : MonoBehaviour
         v = Input.GetAxis("LeftStickVertical");
         rsh= Input.GetAxis("RightStickHorizontal");
 
-        transform.Rotate(new Vector3(0.0f, 0.0f, h) * rotateSpeed);
-        
-        //rb.MoveRotation(Quaternion)
+        transform.Rotate(new Vector3(v, rsh, h) * rotateSpeed);
     }
 }
