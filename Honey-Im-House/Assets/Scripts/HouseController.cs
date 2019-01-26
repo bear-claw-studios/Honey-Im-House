@@ -8,6 +8,8 @@ public class HouseController : MonoBehaviour
 
     public float rotateSpeed;
 
+    public float h, v, rsh;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,11 @@ public class HouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
+        h = Input.GetAxis("LeftStickHorizontal");
+        v = Input.GetAxis("LeftStickVertical");
+        rsh= Input.GetAxis("RightStickHorizontal");
 
-        transform.Rotate(new Vector3(0.0f, 0.0f, h * rotateSpeed));
+        transform.Rotate(new Vector3(0.0f, 0.0f, h) * rotateSpeed);
         
         //rb.MoveRotation(Quaternion)
     }

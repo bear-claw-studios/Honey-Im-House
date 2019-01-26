@@ -297,6 +297,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 5
+  h: 0
+  v: 0
+  rsv: 0
 --- !u!54 &1119477422
 Rigidbody:
   m_ObjectHideFlags: 0
