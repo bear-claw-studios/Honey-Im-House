@@ -14,7 +14,6 @@ public class TrackBallSpinner : MonoBehaviour
 
     Vector3 origin = Vector3.zero;
     public float lerpRate;
-    public float rotationSpeed;
 
     void Awake()
     {

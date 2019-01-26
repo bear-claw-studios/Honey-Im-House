@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 86a1ea8896f94b947b0b67bad357a917
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseRotateTest.unity
     guid: b5e910c25a549cf47b84911c141d8c4d
   - enabled: 1
