@@ -14,7 +14,8 @@ public class HouseController : MonoBehaviour
 
     public float lerpRate;
 
-    Vector3 origin = new Vector3(-90.0f, 0.0f, -180.0f);
+    Vector3 origin = //new Vector3(-90.0f, 0.0f, -180.0f);
+        new Vector3(0.0f, 0.0f, 0.0f);
     public float diffX, diffY, diffZ;
 
     void Start()
