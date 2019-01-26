@@ -4,32 +4,47 @@ using UnityEngine;
 
 public class TrackBallSpinner : MonoBehaviour
 {
-    //Thanks to this video https://www.youtube.com/watch?v=S3pjBQObC90
+    //Component reference
+    Rigidbody rb;
 
+    //Thanks to this video https://www.youtube.com/watch?v=kplusZYqBok
+    
+    Vector3 prevPos = Vector3.zero;
+    Vector3 posDelta = Vector3.zero;
+
+    Vector3 origin = Vector3.zero;
+    public float lerpRate;
     public float rotationSpeed;
 
-    Vector3 origin = new Vector3(0.0f, 0.0f, 0.0f);
-    public float lerpRate;
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        prevPos = Input.mousePosition;
+    }
 
-    private void OnMouseDrag()
-    {/*
-        float rotationX = Input.GetAxis("Mouse X") * rotationSpeed * Mathf.Deg2Rad;
-        float rotationY = Input.GetAxis("Mouse Y") * rotationSpeed * Mathf.Deg2Rad;
+    void Update()
+    {
+        if(Input.GetMouseButton(0))
+        {
+            posDelta = Input.mousePosition - prevPos;
+            if(Vector3.Dot(transform.up, Vector3.up) >= 0)
+            {
+                transform.Rotate(transform.up, -Vector3.Dot(posDelta, Camera.main.transform.right), Space.World);
+            }
+            else
+            {
+                transform.Rotate(transform.up, -Vector3.Dot(posDelta, Camera.main.transform.right), Space.World);
+            }
 
-        transform.Rotate(Vector3.up, -rotationX, Space.World);
-        transform.Rotate(Vector3.right, rotationY, Space.World);
-        */
+            transform.Rotate(Camera.main.transform.right, Vector3.Dot(posDelta, Camera.main.transform.up), Space.World);
+        }
 
-        float xAxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
-        float yAxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
-
-        transform.Rotate(Vector3.down, xAxisRotation);
-        transform.Rotate(Vector3.right, yAxisRotation);
+        prevPos = Input.mousePosition;      
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetButton("Return"))
+        if (Input.GetButton("Return") || Input.GetMouseButton(1))
             ReturnToOriginalRotation();
     }
 
