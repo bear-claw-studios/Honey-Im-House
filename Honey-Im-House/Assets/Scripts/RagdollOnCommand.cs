@@ -19,7 +19,7 @@ public class RagdollOnCommand : MonoBehaviour
             rb.isKinematic = newValue;
     }
 
-    void GoRagdoll()
+    public void GoRagdoll()
     {
         SetKinematic(false);
         GetComponent<Animator>().enabled = false;

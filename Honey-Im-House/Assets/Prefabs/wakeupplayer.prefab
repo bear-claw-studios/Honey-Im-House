@@ -3570,7 +3570,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4226002604048525748}
   - component: {fileID: 153604871902981529}
-  - component: {fileID: 5643872476904066040}
   m_Layer: 0
   m_Name: wakeupplayer
   m_TagString: Untagged
@@ -3617,15 +3616,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5643872476904066040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909081319268131422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafbf2d5fb6cc1c4b8d1190bb2cd5b59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

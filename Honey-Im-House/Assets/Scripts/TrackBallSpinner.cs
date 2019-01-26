@@ -16,16 +16,27 @@ public class TrackBallSpinner : MonoBehaviour
     public float lerpRate;
     public float rotationSpeed;
 
+    public RagdollOnCommand rdoc;
+
+    public bool hasItMovedYet;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
         prevPos = Input.mousePosition;
+        rdoc = FindObjectOfType<RagdollOnCommand>();
+        hasItMovedYet = false;
     }
 
     void Update()
     {
         if (Input.GetMouseButton(0))
         {
+            if(!hasItMovedYet)
+            {
+                hasItMovedYet = true;
+                rdoc.GoRagdoll();
+            }
             posDelta = Input.mousePosition - prevPos;
             if (Vector3.Dot(transform.up, Vector3.up) >= 0)
             {
