@@ -18,11 +18,12 @@ public class TrackBallSpinner : MonoBehaviour
     public RagdollOnCommand rdoc;
     public bool hasItMovedYet;
     public float TorqueCoefficient;
+    public float MaxAngularVelocity;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.maxAngularVelocity = 2;
+        rb.maxAngularVelocity = MaxAngularVelocity;
         prevPos = Input.mousePosition;
         rdoc = FindObjectOfType<RagdollOnCommand>();
         hasItMovedYet = false;
