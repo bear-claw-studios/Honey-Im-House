@@ -22,8 +22,8 @@ public class Trigger : MonoBehaviour
                 var model = root.transform.GetChild(0);
                 Destroy(model.gameObject);
 
-                root.transform.GetChild(1).SetPositionAndRotation(this.transform.position, root.transform.GetChild(1).rotation * this.transform.rotation);
                 root.transform.GetChild(1).gameObject.SetActive(true);
+                root.transform.GetChild(1).SetPositionAndRotation(this.transform.position, root.transform.GetChild(1).rotation * this.transform.rotation);
                 //var newGuy = Instantiate(NewModel, root.transform, true);
                 var nextSibling = transform.parent.GetChild(transform.GetSiblingIndex() + 1);
                 nextSibling.gameObject.GetComponent<MeshRenderer>().enabled = true;
