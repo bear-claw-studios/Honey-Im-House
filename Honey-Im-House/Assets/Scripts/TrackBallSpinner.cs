@@ -31,8 +31,8 @@ public class TrackBallSpinner : MonoBehaviour
 
     void OnMouseDrag()
     {
-        rb.AddTorque(Vector3.up * TorqueCoefficient * -Input.GetAxis("Mouse X"));
-        rb.AddTorque(Vector3.right * TorqueCoefficient * Input.GetAxis("Mouse Y"));
+        var newTorque = Vector3.up * -Input.GetAxis("Mouse X") + Vector3.right * Input.GetAxis("Mouse Y");
+        rb.AddTorque(newTorque.normalized * TorqueCoefficient);
     }
 
     private void FixedUpdate()
