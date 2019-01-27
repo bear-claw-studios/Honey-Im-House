@@ -4,44 +4,90 @@ using UnityEngine;
 
 public class TrackBallSpinner : MonoBehaviour
 {
-    //Thanks to this video https://www.youtube.com/watch?v=S3pjBQObC90
+    //Component reference
+    Rigidbody rb;
 
+    //Thanks to this video https://www.youtube.com/watch?v=kplusZYqBok
+
+    Vector3 prevPos = Vector3.zero;
+    Vector3 posDelta = Vector3.zero;
+
+    Vector3 origin = Vector3.zero;
+    public float lerpRate;
     public float rotationSpeed;
 
-    Vector3 origin = new Vector3(0.0f, 0.0f, 0.0f);
-    public float lerpRate;
+    public RagdollOnCommand rdoc;
 
-    private void OnMouseDrag()
-    {/*
-        float rotationX = Input.GetAxis("Mouse X") * rotationSpeed * Mathf.Deg2Rad;
-        float rotationY = Input.GetAxis("Mouse Y") * rotationSpeed * Mathf.Deg2Rad;
+    public bool hasItMovedYet;
 
-        transform.Rotate(Vector3.up, -rotationX, Space.World);
-        transform.Rotate(Vector3.right, rotationY, Space.World);
-        */
+    public float TorqueCoefficient;
 
-        float xAxisRotation = Input.GetAxis("Mouse X") * rotationSpeed;
-        float yAxisRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
+    private bool callForMovement = false;
 
-        transform.Rotate(Vector3.down, xAxisRotation);
-        transform.Rotate(Vector3.right, yAxisRotation);
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        prevPos = Input.mousePosition;
+        rdoc = FindObjectOfType<RagdollOnCommand>();
+        hasItMovedYet = false;
+    }
+
+    //void Update()
+    //{
+    //    if (Input.GetMouseButton(0))
+    //    {
+    //        if(!hasItMovedYet)
+    //        {
+    //            hasItMovedYet = true;
+    //            //rdoc.GoRagdoll();
+    //        }
+    //        posDelta = Input.mousePosition - prevPos;
+
+    //        //var x  = Quaternion.FromToRotation(transform.rotation, )
+
+    //        if (Vector3.Dot(transform.up, Vector3.up) >= 0)
+    //        {
+    //            transform.Rotate(transform.up, -Vector3.Dot(posDelta, Camera.main.transform.right), Space.World);
+    //        }
+    //        else
+    //        {
+    //            //transform.Rotate(transform.up, -Vector3.Dot(posDelta, Camera.main.transform.right), Space.World);
+    //        }
+
+    //        //transform.Rotate(Camera.main.transform.right, Vector3.Dot(posDelta, Camera.main.transform.up), Space.World);
+    //    }
+
+    //    prevPos = Input.mousePosition;
+    //}
+
+    void OnMouseDrag()
+    {
+        rb.AddTorque(Vector3.up * TorqueCoefficient * -Input.GetAxis("Mouse X"));
+        rb.AddTorque(Vector3.right * TorqueCoefficient * Input.GetAxis("Mouse Y"));
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetButton("Return"))
+        if (Input.GetButton("Return") || Input.GetMouseButton(1))
             ReturnToOriginalRotation();
     }
 
     //Return cube to its original orientation
     public void ReturnToOriginalRotation()
     {
-        if (transform.rotation != Quaternion.Euler(origin))
+        if ((rb.rotation.eulerAngles - Quaternion.Euler(origin).eulerAngles).magnitude < 45)//Quaternion.Euler(origin))
         {
-            Quaternion current = transform.rotation;
-            //Spherical lerp call to smoothly rotate the cube while the "Return" button is held down
-            Quaternion newRotation = Quaternion.Slerp(current, Quaternion.Euler(origin), lerpRate);
-            transform.rotation = newRotation;
+            rb.angularVelocity = Vector3.zero;
+        }
+        else
+        {
+            var target = Quaternion.Euler(origin) * Quaternion.Inverse(rb.rotation);
+            rb.AddTorque(target.x, target.y, target.z, ForceMode.VelocityChange);
+
+            //Quaternion current = transform.rotation;
+            ////Spherical lerp call to smoothly rotate the cube while the "Return" button is held down
+            //Quaternion newRotation = Quaternion.Slerp(current, Quaternion.Euler(origin), lerpRate);
+            //transform.rotation = newRotation;
         }
     }
 }
