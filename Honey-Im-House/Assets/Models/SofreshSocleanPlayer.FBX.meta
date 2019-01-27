@@ -3,268 +3,203 @@ guid: a137b0a2763da2842a9760a33d0d993a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Abdomen
-    100002: Abdomen 1
-    100004: Body
-    100006: Body 1
-    100008: Body 2
-    100010: Body 3
-    100012: Chest
-    100014: Chest 1
-    100016: genital
-    100018: genital 1
-    100020: Head
-    100022: Hip
-    100024: Hip 1
-    100026: Hip 2
-    100028: Hip 3
-    100030: James
-    100032: lBigToe1
-    100034: lBigToe1 1
-    100036: lBigToe2
-    100038: lBigToe2 1
-    100040: Left Collar
-    100042: Left Foot
-    100044: Left Foot 1
-    100046: Left Foot 2
-    100048: Left Forearm
-    100050: Left Hand
-    100052: Left Shin
-    100054: Left Shin 1
-    100056: Left Shin 2
-    100058: Left Shoulder
-    100060: Left Thigh
-    100062: Left Thigh 1
-    100064: Left Thigh 2
-    100066: leftEye
-    100068: lIndex1
-    100070: lIndex2
-    100072: lIndex3
-    100074: lIndexToe1
-    100076: lIndexToe2
-    100078: lMid1
-    100080: lMid2
-    100082: lMid3
-    100084: lMidToe1
-    100086: lMidToe2
-    100088: lPinky1
-    100090: lPinky2
-    100092: lPinky3
-    100094: lPinkyToe1
-    100096: lPinkyToe2
-    100098: lRing1
-    100100: lRing2
-    100102: lRing3
-    100104: lRingToe1
-    100106: lRingToe2
-    100108: lThumb1
-    100110: lThumb2
-    100112: lThumb3
-    100114: lToe
-    100116: lToe 1
-    100118: lToe 2
-    100120: MSandalL
-    100122: MSandalR
-    100124: Neck
-    100126: rBigToe1
-    100128: rBigToe1 1
-    100130: rBigToe1 2
-    100132: rBigToe2
-    100134: rBigToe2 1
-    100136: rBigToe2 2
-    100138: Right Collar
-    100140: Right Foot
-    100142: Right Foot 1
-    100144: Right Foot 2
-    100146: Right Forearm
-    100148: Right Hand
-    100150: Right Shin
-    100152: Right Shin 1
-    100154: Right Shin 2
-    100156: Right Shoulder
-    100158: Right Thigh
-    100160: Right Thigh 1
-    100162: Right Thigh 2
-    100164: rightEye
-    100166: rIndex1
-    100168: rIndex2
-    100170: rIndex3
-    100172: rIndexToe1
-    100174: rIndexToe2
-    100176: rMid1
-    100178: rMid2
-    100180: rMid3
-    100182: rMidToe1
-    100184: rMidToe2
-    100186: rPinky1
-    100188: rPinky2
-    100190: rPinky3
-    100192: rPinkyToe1
-    100194: rPinkyToe2
-    100196: rRing1
-    100198: rRing2
-    100200: rRing3
-    100202: rRingToe1
-    100204: rRingToe2
-    100206: rThumb1
-    100208: rThumb2
-    100210: rThumb3
-    100212: rToe
-    100214: rToe 1
-    100216: rToe 2
-    100218: SideParting
-    100220: Skirt1
-    100222: //RootNode
-    400000: Abdomen
-    400002: Abdomen 1
-    400004: Body
-    400006: Body 1
-    400008: Body 2
-    400010: Body 3
-    400012: Chest
-    400014: Chest 1
-    400016: genital
-    400018: genital 1
-    400020: Head
-    400022: Hip
-    400024: Hip 1
-    400026: Hip 2
-    400028: Hip 3
-    400030: James
-    400032: lBigToe1
-    400034: lBigToe1 1
-    400036: lBigToe2
-    400038: lBigToe2 1
-    400040: Left Collar
-    400042: Left Foot
-    400044: Left Foot 1
-    400046: Left Foot 2
-    400048: Left Forearm
-    400050: Left Hand
-    400052: Left Shin
-    400054: Left Shin 1
-    400056: Left Shin 2
-    400058: Left Shoulder
-    400060: Left Thigh
-    400062: Left Thigh 1
-    400064: Left Thigh 2
-    400066: leftEye
-    400068: lIndex1
-    400070: lIndex2
-    400072: lIndex3
-    400074: lIndexToe1
-    400076: lIndexToe2
-    400078: lMid1
-    400080: lMid2
-    400082: lMid3
-    400084: lMidToe1
-    400086: lMidToe2
-    400088: lPinky1
-    400090: lPinky2
-    400092: lPinky3
-    400094: lPinkyToe1
-    400096: lPinkyToe2
-    400098: lRing1
-    400100: lRing2
-    400102: lRing3
-    400104: lRingToe1
-    400106: lRingToe2
-    400108: lThumb1
-    400110: lThumb2
-    400112: lThumb3
-    400114: lToe
-    400116: lToe 1
-    400118: lToe 2
-    400120: MSandalL
-    400122: MSandalR
-    400124: Neck
-    400126: rBigToe1
-    400128: rBigToe1 1
-    400130: rBigToe1 2
-    400132: rBigToe2
-    400134: rBigToe2 1
-    400136: rBigToe2 2
-    400138: Right Collar
-    400140: Right Foot
-    400142: Right Foot 1
-    400144: Right Foot 2
-    400146: Right Forearm
-    400148: Right Hand
-    400150: Right Shin
-    400152: Right Shin 1
-    400154: Right Shin 2
-    400156: Right Shoulder
-    400158: Right Thigh
-    400160: Right Thigh 1
-    400162: Right Thigh 2
-    400164: rightEye
-    400166: rIndex1
-    400168: rIndex2
-    400170: rIndex3
-    400172: rIndexToe1
-    400174: rIndexToe2
-    400176: rMid1
-    400178: rMid2
-    400180: rMid3
-    400182: rMidToe1
-    400184: rMidToe2
-    400186: rPinky1
-    400188: rPinky2
-    400190: rPinky3
-    400192: rPinkyToe1
-    400194: rPinkyToe2
-    400196: rRing1
-    400198: rRing2
-    400200: rRing3
-    400202: rRingToe1
-    400204: rRingToe2
-    400206: rThumb1
-    400208: rThumb2
-    400210: rThumb3
-    400212: rToe
-    400214: rToe 1
-    400216: rToe 2
-    400218: SideParting
-    400220: Skirt1
-    400222: //RootNode
-    2100000: No Name
-    2100002: James_Body
-    2100004: James_Head
-    2100006: James_Gums
-    2100008: James_Tongue
-    2100010: James_TeethBottom
-    2100012: James_TeethTop
-    2100014: James_TopEyelashes
-    2100016: James_BottomEyelashes
-    2100018: James_FingerNails
-    2100020: James_ToeNails
-    2100022: James_Pupil
-    2100024: James_Iris
-    2100026: James_Eyeball
-    2100028: Skirt1_skirt
-    2100030: MSandalL_SandalBottom
-    2100032: MSandalL_SandalTop
-    2100034: MSandalL_trim
-    2100036: MSandalL_StrapFoot
-    2100038: MSandalL_StrapToe
-    2100040: MSandalR_SandalBottom
-    2100042: MSandalR_SandalTop
-    2100044: MSandalR_trim
-    2100046: MSandalR_StrapFoot
-    2100048: MSandalR_StrapToe
-    2300000: SideParting
-    3300000: SideParting
-    4300000: SideParting
-    4300002: James
-    4300004: Skirt1
-    4300006: MSandalL
-    4300008: MSandalR
-    7400000: Take 001
+    100000: ' Pinky 3 L'
+    100002: ' Pinky 3 R'
+    100004: Armature.004
+    100006: Foot L
+    100008: Foot R
+    100010: ForeArm L
+    100012: ForeArm R
+    100014: Head
+    100016: Head_end
+    100018: Hip
+    100020: Indexfg 1 L
+    100022: Indexfg 1 L_end
+    100024: Indexfg 1 R
+    100026: Indexfg 1 R_end
+    100028: Indexfg 2 L
+    100030: Indexfg 2 R
+    100032: Indexfg 3 L
+    100034: Indexfg 3 R
+    100036: James
+    100038: kin L
+    100040: kin L_end
+    100042: kin R
+    100044: kin R_end
+    100046: Midfg 1 L
+    100048: Midfg 1 L_end
+    100050: Midfg 1 R
+    100052: Midfg 1 R_end
+    100054: Midfg 2 L
+    100056: Midfg 2 R
+    100058: Midfg 3 L
+    100060: Midfg 3 R
+    100062: MSandalL
+    100064: MSandalR
+    100066: Neck
+    100068: Pinky 1 L
+    100070: Pinky 1 L_end
+    100072: Pinky 1 R
+    100074: Pinky 1 R_end
+    100076: Pinky 2 L
+    100078: Pinky 2 R
+    100080: Poletarget L
+    100082: Poletarget L_end
+    100084: Poletarget R
+    100086: Poletarget R_end
+    100088: Ringfg 1 L
+    100090: Ringfg 1 L_end
+    100092: Ringfg 1 R
+    100094: Ringfg 1 R_end
+    100096: Ringfg 2 L
+    100098: Ringfg 2 R
+    100100: Ringfg 3 L
+    100102: Ringfg 3 R
+    100104: Shin L
+    100106: Shin R
+    100108: Shoulder L
+    100110: Shoulder R
+    100112: //RootNode
+    100114: Spine
+    100116: Spine Base
+    100118: Thigh L
+    100120: Thigh R
+    100122: Thumb 1 L
+    100124: Thumb 1 L_end
+    100126: Thumb 1 R
+    100128: Thumb 1 R_end
+    100130: Thumb 2 L
+    100132: Thumb 2 R
+    100134: Thumb 3 L
+    100136: Thumb 3 R
+    100138: Toes L
+    100140: Toes L_end
+    100142: Toes R
+    100144: Toes R_end
+    100146: Towel
+    100148: UpperArm L.
+    100150: UpperArm R
+    100152: Wrist L
+    100154: Wrist R
+    400000: ' Pinky 3 L'
+    400002: ' Pinky 3 R'
+    400004: Armature.004
+    400006: Foot L
+    400008: Foot R
+    400010: ForeArm L
+    400012: ForeArm R
+    400014: Head
+    400016: Head_end
+    400018: Hip
+    400020: Indexfg 1 L
+    400022: Indexfg 1 L_end
+    400024: Indexfg 1 R
+    400026: Indexfg 1 R_end
+    400028: Indexfg 2 L
+    400030: Indexfg 2 R
+    400032: Indexfg 3 L
+    400034: Indexfg 3 R
+    400036: James
+    400038: kin L
+    400040: kin L_end
+    400042: kin R
+    400044: kin R_end
+    400046: Midfg 1 L
+    400048: Midfg 1 L_end
+    400050: Midfg 1 R
+    400052: Midfg 1 R_end
+    400054: Midfg 2 L
+    400056: Midfg 2 R
+    400058: Midfg 3 L
+    400060: Midfg 3 R
+    400062: MSandalL
+    400064: MSandalR
+    400066: Neck
+    400068: Pinky 1 L
+    400070: Pinky 1 L_end
+    400072: Pinky 1 R
+    400074: Pinky 1 R_end
+    400076: Pinky 2 L
+    400078: Pinky 2 R
+    400080: Poletarget L
+    400082: Poletarget L_end
+    400084: Poletarget R
+    400086: Poletarget R_end
+    400088: Ringfg 1 L
+    400090: Ringfg 1 L_end
+    400092: Ringfg 1 R
+    400094: Ringfg 1 R_end
+    400096: Ringfg 2 L
+    400098: Ringfg 2 R
+    400100: Ringfg 3 L
+    400102: Ringfg 3 R
+    400104: Shin L
+    400106: Shin R
+    400108: Shoulder L
+    400110: Shoulder R
+    400112: //RootNode
+    400114: Spine
+    400116: Spine Base
+    400118: Thigh L
+    400120: Thigh R
+    400122: Thumb 1 L
+    400124: Thumb 1 L_end
+    400126: Thumb 1 R
+    400128: Thumb 1 R_end
+    400130: Thumb 2 L
+    400132: Thumb 2 R
+    400134: Thumb 3 L
+    400136: Thumb 3 R
+    400138: Toes L
+    400140: Toes L_end
+    400142: Toes R
+    400144: Toes R_end
+    400146: Towel
+    400148: UpperArm L.
+    400150: UpperArm R
+    400152: Wrist L
+    400154: Wrist R
+    2100000: MTshirt2_01_-_Default
+    2100002: MSandalR_SandalBottom
+    2100004: MSandalR_SandalTop
+    2100006: MSandalR_trim
+    2100008: MSandalR_StrapFoot
+    2100010: MSandalR_StrapToe
+    2100012: MSandalL_SandalBottom
+    2100014: MSandalL_SandalTop
+    2100016: MSandalL_trim
+    2100018: MSandalL_StrapFoot
+    2100020: MSandalL_StrapToe
+    2100022: James_Body
+    2100024: James_Head
+    2100026: James_Gums
+    2100028: James_Tongue
+    2100030: James_TeethBottom
+    2100032: James_TeethTop
+    2100034: James_TopEyelashes
+    2100036: James_BottomEyelashes
+    2100038: James_FingerNails
+    2100040: James_ToeNails
+    2100042: James_Pupil
+    2100044: James_Iris
+    2100046: James_Eyeball
+    4300000: Towel
+    4300002: MSandalR
+    4300004: MSandalL
+    4300006: James
+    7400000: Armature.004|Armature.000|Armature.004|SideParting|Take 001|Layer01.001|Arma
+    7400002: Armature.004|Armature.000|Armature.004|SideParting|Take 001|Layer01|Arma.000
+    7400004: Armature.004|Armature.000|Armature.004|SideParting|Take 001|Layer01|Armature
+    7400006: Armature.004|Armature.000|Armature.004|Skirt1Action|Armature.004|Skirt1Actio
+    7400008: Armature.004|SideParting|Take 001|Layer01
+    7400010: Armature.004|SideParting|Take 001|Layer01.001
+    7400012: Armature.004|Skirt1Action
     9500000: //RootNode
     13700000: James
     13700002: MSandalL
     13700004: MSandalR
-    13700006: Skirt1
+    13700006: Towel
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
