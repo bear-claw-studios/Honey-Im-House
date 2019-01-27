@@ -6,6 +6,8 @@ public class SendMessageToParent : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
-        SendMessageUpwards("Grunt");
+        float magnitude = collision.relativeVelocity.magnitude;
+        SendMessageUpwards("Grunt", magnitude);
+        Debug.Log(magnitude);
     }
 }

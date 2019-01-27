@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class CollisionAudio : MonoBehaviour
 {
+    Rigidbody rb;
+
     AudioSource audio;
     public AudioClip[] grunts;
 
-    public float gruntCooldown, timeOfLastGrunt;
+    public float gruntCooldown, timeOfLastGrunt, magnitudeThreshold;
+
+    public MusicController mc;
+    public GameObject explosionEffect;
+    public float exploisionForce;
 
     void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         audio = GetComponent<AudioSource>();
         AssignNewGrunt();
+        mc = FindObjectOfType<MusicController>();
     }
 
-    public void Grunt()
+    public void Grunt(float magnitude)
     {
-        if (Time.time - timeOfLastGrunt >= gruntCooldown)
+        if (Time.time - timeOfLastGrunt >= gruntCooldown && magnitude >= magnitudeThreshold && !audio.isPlaying)
         {
+            //Instantiate(explosionEffect, transform.position, transform.rotation);
+            //rb.AddExplosionForce(exploisionForce, transform.position, 0.2f);
             AssignNewGrunt();
             audio.Play();
             timeOfLastGrunt = Time.time;
@@ -27,6 +37,15 @@ public class CollisionAudio : MonoBehaviour
 
     public void AssignNewGrunt()
     {
-        audio.clip = audio.clip = grunts[Random.Range(0, grunts.Length - 1)];
+        audio.clip = grunts[Random.Range(0, grunts.Length - 1)];
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Radio"))
+            mc.SkipTrack();
+
+        if (other.gameObject.CompareTag("CollisionAudioSource"))
+            other.SendMessageUpwards("PlayAudio");
     }
 }

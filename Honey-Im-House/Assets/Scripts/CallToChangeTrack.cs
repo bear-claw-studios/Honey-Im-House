@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CallToChangeTrack : MonoBehaviour
 {
+    /*
     public MusicController mc;
 
     void Awake()
@@ -15,4 +16,10 @@ public class CallToChangeTrack : MonoBehaviour
     {
         mc.SkipTrack();
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        //mc.
+    }
+    */
 }
