@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/JakeTitle.unity
     guid: 52a65a8b4cdaf8d499ed60e012984b5f
   - enabled: 1
-    path: Assets/Scenes/JakeHouse.unity
-    guid: 6d681b3472a8c4a40a2f0ddb45407089
-  - enabled: 1
-    path: Assets/Scenes/HouseRotateTest.unity
-    guid: b5e910c25a549cf47b84911c141d8c4d
-  - enabled: 1
-    path: Assets/Scenes/SimplerRotationTest.unity
-    guid: a05125d57a9b07b4b9f3ab4867337b03
+    path: Assets/Scenes/GoodHouse.unity
+    guid: 359f3ab7a32252a488cedd17ebf7abde
   m_configObjects: {}
