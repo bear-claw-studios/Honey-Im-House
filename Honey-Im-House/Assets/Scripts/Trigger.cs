@@ -2,7 +2,7 @@
 
 public class Trigger : MonoBehaviour
 {
-    public GameObject NewModel;
+    bool triggersOn = true;
 
     void Start()
     {
@@ -16,6 +16,7 @@ public class Trigger : MonoBehaviour
     {
         if (this.transform.GetSiblingIndex() == 0)
         {
+            triggersOn = false;
             var root = other.transform.root.gameObject;
             if (root.tag == "Guy")
             {
@@ -23,14 +24,15 @@ public class Trigger : MonoBehaviour
                 if (model.transform.GetSiblingIndex() != model.transform.parent.childCount - 1)
                 {
                     Destroy(model.gameObject);
+                    root.transform.GetChild(1).gameObject.SetActive(true);
+                    root.transform.GetChild(1).SetPositionAndRotation(this.transform.position, root.transform.GetChild(1).rotation * this.transform.rotation);
                 }
 
                 if (transform.GetSiblingIndex() != transform.parent.childCount - 1)
                 {
-                    root.transform.GetChild(1).gameObject.SetActive(true);
-                    root.transform.GetChild(1).SetPositionAndRotation(this.transform.position, root.transform.GetChild(1).rotation * this.transform.rotation);
                     var nextSibling = transform.parent.GetChild(transform.GetSiblingIndex() + 1);
                     nextSibling.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    triggersOn = true;
                     Destroy(this.gameObject);
                 }
                 else
@@ -38,6 +40,7 @@ public class Trigger : MonoBehaviour
                     //end the game?
                 }
             }
+            triggersOn = true;
         }
     }
 }
