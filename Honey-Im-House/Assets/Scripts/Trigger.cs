@@ -12,18 +12,23 @@ public class Trigger : MonoBehaviour
     {
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) //have one of these as is, the rest active but with NO MATERIAL
     {
-        var root = other.transform.root.gameObject;
-        if (root.tag == "Guy")
+        if (this.transform.GetSiblingIndex() == 0)
         {
-            var model = root.transform.GetChild(0);
-            Destroy(model.gameObject);
+            var root = other.transform.root.gameObject;
+            if (root.tag == "Guy")
+            {
+                var model = root.transform.GetChild(0);
+                Destroy(model.gameObject);
 
-            root.transform.GetChild(1).SetPositionAndRotation(this.transform.position, root.transform.GetChild(1).rotation * this.transform.rotation);
-            root.transform.GetChild(1).gameObject.SetActive(true);
-            //var newGuy = Instantiate(NewModel, root.transform, true);
-            Destroy(this.gameObject);
+                root.transform.GetChild(1).SetPositionAndRotation(this.transform.position, root.transform.GetChild(1).rotation * this.transform.rotation);
+                root.transform.GetChild(1).gameObject.SetActive(true);
+                //var newGuy = Instantiate(NewModel, root.transform, true);
+                var nextSibling = transform.parent.GetChild(transform.GetSiblingIndex() + 1);
+                nextSibling.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                Destroy(this.gameObject);
+            }
         }
     }
 }
