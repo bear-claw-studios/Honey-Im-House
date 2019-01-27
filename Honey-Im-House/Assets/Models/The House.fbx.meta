@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: c118ab9138d57044a9bb6d4da16fe5d6
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ' living roomshelf_Plane.019'
+    100002: ' Treadmill_Model'
+    100004: Barbell
+    100006: bath wall cabinet
+    100008: Bathroom mirror
+    100010: Bathroom wall
+    100012: BEd
+    100014: Bed _office wall
+    100016: bedrm nite stnd left
+    100018: bedrm nite stnd right
+    100020: bedrm pillow left
+    100022: bedrm pillow right
+    100024: bedrm_office_divide
+    100026: bedroom ceiling light
+    100028: Bedroom closet
+    100030: Black_pillow_Cube.009
+    100032: Cabinet3
+    100034: Carpet
+    100036: Ceiling light
+    100038: coffee table
+    100040: Coffee.Black.Inside.Cup.001_Circle.004
+    100042: CoffeeCup.Glass.001_Circle.008
+    100044: CoffeeCup.Porcelin.001_Circle.009
+    100046: Comp Desk
+    100048: Cube.005_Cube.006
+    100050: Cube.007_Cube.008
+    100052: Desk chair
+    100054: DumbBell1_default.001
+    100056: DumbBell1_default.006
+    100058: gray_pillow_Cube.012
+    100060: I mac 1
+    100062: I mac 2
+    100064: Internal gym wall
+    100066: Keyboard
+    100068: kitchen cabinets
+    100070: kitchen lights
+    100072: Kitchen sink
+    100074: Lamp bedrm left
+    100076: Lamp_Sphere.001
+    100078: lanmp bedrm right
+    100080: Litchen_bathrm_gym wall
+    100082: Living room lamp
+    100084: living room_office wall
+    100086: long sofa
+    100088: microwave
+    100090: Nesstila_Cup
+    100092: Office closet
+    100094: Pantry
+    100096: Pic frames bedrm
+    100098: Plane.004_Plane.004
+    100100: Plane.006_Plane.009
+    100102: Plane.010_Plane.014
+    100104: Primary Shell.001
+    100106: Refrigerator
+    100108: rosa.008_Plane.015
+    100110: shower door
+    100112: Shower head
+    100114: Sink soap
+    100116: Sink soap 2
+    100118: Sofa 1
+    100120: Sofa 2
+    100122: Sofa_bottom_matress.001_Cube.013
+    100124: Sofa_bottom_matress_Cube.022
+    100126: Sofa_support.001_Cone.001
+    100128: Sofa_support.002_Cone.007
+    100130: Sofa_support_Cone.003
+    100132: //RootNode
+    100134: Toilet
+    100136: TV living room
+    100138: TV_bedroom
+    100140: Weightlifting_Bench
+    400000: ' living roomshelf_Plane.019'
+    400002: ' Treadmill_Model'
+    400004: Barbell
+    400006: bath wall cabinet
+    400008: Bathroom mirror
+    400010: Bathroom wall
+    400012: BEd
+    400014: Bed _office wall
+    400016: bedrm nite stnd left
+    400018: bedrm nite stnd right
+    400020: bedrm pillow left
+    400022: bedrm pillow right
+    400024: bedrm_office_divide
+    400026: bedroom ceiling light
+    400028: Bedroom closet
+    400030: Black_pillow_Cube.009
+    400032: Cabinet3
+    400034: Carpet
+    400036: Ceiling light
+    400038: coffee table
+    400040: Coffee.Black.Inside.Cup.001_Circle.004
+    400042: CoffeeCup.Glass.001_Circle.008
+    400044: CoffeeCup.Porcelin.001_Circle.009
+    400046: Comp Desk
+    400048: Cube.005_Cube.006
+    400050: Cube.007_Cube.008
+    400052: Desk chair
+    400054: DumbBell1_default.001
+    400056: DumbBell1_default.006
+    400058: gray_pillow_Cube.012
+    400060: I mac 1
+    400062: I mac 2
+    400064: Internal gym wall
+    400066: Keyboard
+    400068: kitchen cabinets
+    400070: kitchen lights
+    400072: Kitchen sink
+    400074: Lamp bedrm left
+    400076: Lamp_Sphere.001
+    400078: lanmp bedrm right
+    400080: Litchen_bathrm_gym wall
+    400082: Living room lamp
+    400084: living room_office wall
+    400086: long sofa
+    400088: microwave
+    400090: Nesstila_Cup
+    400092: Office closet
+    400094: Pantry
+    400096: Pic frames bedrm
+    400098: Plane.004_Plane.004
+    400100: Plane.006_Plane.009
+    400102: Plane.010_Plane.014
+    400104: Primary Shell.001
+    400106: Refrigerator
+    400108: rosa.008_Plane.015
+    400110: shower door
+    400112: Shower head
+    400114: Sink soap
+    400116: Sink soap 2
+    400118: Sofa 1
+    400120: Sofa 2
+    400122: Sofa_bottom_matress.001_Cube.013
+    400124: Sofa_bottom_matress_Cube.022
+    400126: Sofa_support.001_Cone.001
+    400128: Sofa_support.002_Cone.007
+    400130: Sofa_support_Cone.003
+    400132: //RootNode
+    400134: Toilet
+    400136: TV living room
+    400138: TV_bedroom
+    400140: Weightlifting_Bench
+    2100000: default
+    2100002: 01___10482_barbell
+    2100004: 01___Default
+    2100006: phongE2SG
+    2100008: lambert3SG
+    2100010: phong2SG
+    2100012: phongE3SG
+    2100014: phong1SG
+    2100016: phongE4SG
+    2100018: phong3SG
+    2100020: None.001
+    2100022: Material.030
+    2100024: Material.037
+    2100026: Material.024
+    2100028: Material.035
+    2100030: Material.038
+    2100032: _Paris2010_0ChimneyBase_16
+    2100034: material0
+    2100036: wire_177148027
+    2100038: _Paris2010_0Sol_4
+    2100040: wire_225143087
+    2100042: wire_154185229
+    2100044: No Name
+    2100046: Black_Bed
+    2100048: Blanket
+    2100050: Sheets
+    2100052: Pillow
+    2100054: Tabletop
+    2100056: Table_Legs
+    2100058: Light
+    2100060: Light_Black
+    2100062: Shade
+    2100064: Material.022
+    2100066: Material.023
+    2100068: Paper
+    2100070: Frame
+    2100072: Picture_4
+    2100074: Picture_6
+    2100076: Picture_5
+    2100078: Plastic_Handle_material
+    2100080: Sill_material
+    2100082: Window_material
+    2100084: Glass_material
+    2100086: Plastic_material
+    2100088: hidden_material
+    2100090: Glass_Shower
+    2100092: Material.021
+    2100094: chrome
+    2100096: Material.019
+    2100098: Cabinet_material
+    2100100: Baseboard_material
+    2100102: counter
+    2100104: Drawer_material
+    2100106: Door_material
+    2100108: Material.020
+    2100110: Material.003
+    2100112: Material.005
+    2100114: Material.014
+    2100116: Material.015
+    2100118: white_gloss
+    2100120: Marble
+    2100122: Material.011
+    2100124: Mat.Cup.Porcelin.001
+    2100126: Material.033
+    2100128: Material.034
+    2100130: Material.032
+    2100132: Material.010
+    2100134: Mat.Cup.Glass.001
+    2100136: Material.006
+    2100138: Material.007
+    2100140: Mat.Coffee.Black.000
+    2100142: Material.001
+    2100144: Material.008
+    2100146: Material.031_NONE
+    2100148: Material.002
+    2100150: Material.013
+    2100152: Material_013.001
+    2100154: whitewall
+    2100156: transparent
+    2300000: ' living roomshelf_Plane.019'
+    2300002: ' Treadmill_Model'
+    2300004: Barbell
+    2300006: bath wall cabinet
+    2300008: Bathroom mirror
+    2300010: Bathroom wall
+    2300012: BEd
+    2300014: Bed _office wall
+    2300016: bedrm nite stnd left
+    2300018: bedrm nite stnd right
+    2300020: bedrm pillow left
+    2300022: bedrm pillow right
+    2300024: bedrm_office_divide
+    2300026: bedroom ceiling light
+    2300028: Bedroom closet
+    2300030: Black_pillow_Cube.009
+    2300032: Cabinet3
+    2300034: Carpet
+    2300036: Ceiling light
+    2300038: coffee table
+    2300040: Coffee.Black.Inside.Cup.001_Circle.004
+    2300042: CoffeeCup.Glass.001_Circle.008
+    2300044: CoffeeCup.Porcelin.001_Circle.009
+    2300046: Comp Desk
+    2300048: Cube.005_Cube.006
+    2300050: Cube.007_Cube.008
+    2300052: Desk chair
+    2300054: DumbBell1_default.001
+    2300056: DumbBell1_default.006
+    2300058: gray_pillow_Cube.012
+    2300060: I mac 1
+    2300062: I mac 2
+    2300064: Internal gym wall
+    2300066: Keyboard
+    2300068: kitchen cabinets
+    2300070: kitchen lights
+    2300072: Kitchen sink
+    2300074: Lamp bedrm left
+    2300076: Lamp_Sphere.001
+    2300078: lanmp bedrm right
+    2300080: Litchen_bathrm_gym wall
+    2300082: Living room lamp
+    2300084: living room_office wall
+    2300086: long sofa
+    2300088: microwave
+    2300090: Nesstila_Cup
+    2300092: Office closet
+    2300094: Pantry
+    2300096: Pic frames bedrm
+    2300098: Plane.004_Plane.004
+    2300100: Plane.006_Plane.009
+    2300102: Plane.010_Plane.014
+    2300104: Primary Shell.001
+    2300106: Refrigerator
+    2300108: rosa.008_Plane.015
+    2300110: shower door
+    2300112: Shower head
+    2300114: Sink soap
+    2300116: Sink soap 2
+    2300118: Sofa 1
+    2300120: Sofa 2
+    2300122: Sofa_bottom_matress.001_Cube.013
+    2300124: Sofa_bottom_matress_Cube.022
+    2300126: Sofa_support.001_Cone.001
+    2300128: Sofa_support.002_Cone.007
+    2300130: Sofa_support_Cone.003
+    2300132: Toilet
+    2300134: TV living room
+    2300136: TV_bedroom
+    2300138: Weightlifting_Bench
+    3300000: ' living roomshelf_Plane.019'
+    3300002: ' Treadmill_Model'
+    3300004: Barbell
+    3300006: bath wall cabinet
+    3300008: Bathroom mirror
+    3300010: Bathroom wall
+    3300012: BEd
+    3300014: Bed _office wall
+    3300016: bedrm nite stnd left
+    3300018: bedrm nite stnd right
+    3300020: bedrm pillow left
+    3300022: bedrm pillow right
+    3300024: bedrm_office_divide
+    3300026: bedroom ceiling light
+    3300028: Bedroom closet
+    3300030: Black_pillow_Cube.009
+    3300032: Cabinet3
+    3300034: Carpet
+    3300036: Ceiling light
+    3300038: coffee table
+    3300040: Coffee.Black.Inside.Cup.001_Circle.004
+    3300042: CoffeeCup.Glass.001_Circle.008
+    3300044: CoffeeCup.Porcelin.001_Circle.009
+    3300046: Comp Desk
+    3300048: Cube.005_Cube.006
+    3300050: Cube.007_Cube.008
+    3300052: Desk chair
+    3300054: DumbBell1_default.001
+    3300056: DumbBell1_default.006
+    3300058: gray_pillow_Cube.012
+    3300060: I mac 1
+    3300062: I mac 2
+    3300064: Internal gym wall
+    3300066: Keyboard
+    3300068: kitchen cabinets
+    3300070: kitchen lights
+    3300072: Kitchen sink
+    3300074: Lamp bedrm left
+    3300076: Lamp_Sphere.001
+    3300078: lanmp bedrm right
+    3300080: Litchen_bathrm_gym wall
+    3300082: Living room lamp
+    3300084: living room_office wall
+    3300086: long sofa
+    3300088: microwave
+    3300090: Nesstila_Cup
+    3300092: Office closet
+    3300094: Pantry
+    3300096: Pic frames bedrm
+    3300098: Plane.004_Plane.004
+    3300100: Plane.006_Plane.009
+    3300102: Plane.010_Plane.014
+    3300104: Primary Shell.001
+    3300106: Refrigerator
+    3300108: rosa.008_Plane.015
+    3300110: shower door
+    3300112: Shower head
+    3300114: Sink soap
+    3300116: Sink soap 2
+    3300118: Sofa 1
+    3300120: Sofa 2
+    3300122: Sofa_bottom_matress.001_Cube.013
+    3300124: Sofa_bottom_matress_Cube.022
+    3300126: Sofa_support.001_Cone.001
+    3300128: Sofa_support.002_Cone.007
+    3300130: Sofa_support_Cone.003
+    3300132: Toilet
+    3300134: TV living room
+    3300136: TV_bedroom
+    3300138: Weightlifting_Bench
+    4300000: DumbBell1_default.006
+    4300002: DumbBell1_default.001
+    4300004: Barbell
+    4300006: Weightlifting_Bench
+    4300008: ' Treadmill_Model'
+    4300010: Plane.004_Plane.004
+    4300012: Office closet
+    4300014: Pantry
+    4300016: I mac 1
+    4300018: I mac 2
+    4300020: Keyboard
+    4300022: Desk chair
+    4300024: Comp Desk
+    4300026: TV_bedroom
+    4300028: TV living room
+    4300030: BEd
+    4300032: bedrm pillow right
+    4300034: bedrm nite stnd right
+    4300036: bedrm nite stnd left
+    4300038: bedroom ceiling light
+    4300040: lanmp bedrm right
+    4300042: Lamp bedrm left
+    4300044: Pic frames bedrm
+    4300046: bedrm pillow left
+    4300048: Toilet
+    4300050: bath wall cabinet
+    4300052: shower door
+    4300054: Sink soap
+    4300056: Shower head
+    4300058: Sink soap 2
+    4300060: Bathroom mirror
+    4300062: Cabinet3
+    4300064: Refrigerator
+    4300066: Kitchen sink
+    4300068: Plane.010_Plane.014
+    4300070: Cube.007_Cube.008
+    4300072: Plane.006_Plane.009
+    4300074: Cube.005_Cube.006
+    4300076: microwave
+    4300078: Bedroom closet
+    4300080: kitchen cabinets
+    4300082: kitchen lights
+    4300084: CoffeeCup.Porcelin.001_Circle.009
+    4300086: Nesstila_Cup
+    4300088: gray_pillow_Cube.012
+    4300090: ' living roomshelf_Plane.019'
+    4300092: CoffeeCup.Glass.001_Circle.008
+    4300094: Sofa 2
+    4300096: Sofa_bottom_matress_Cube.022
+    4300098: Sofa_support.002_Cone.007
+    4300100: Coffee.Black.Inside.Cup.001_Circle.004
+    4300102: Sofa_support_Cone.003
+    4300104: Living room lamp
+    4300106: Black_pillow_Cube.009
+    4300108: Sofa_support.001_Cone.001
+    4300110: Lamp_Sphere.001
+    4300112: coffee table
+    4300114: Sofa 1
+    4300116: Ceiling light
+    4300118: Sofa_bottom_matress.001_Cube.013
+    4300120: long sofa
+    4300122: Carpet
+    4300124: rosa.008_Plane.015
+    4300126: Litchen_bathrm_gym wall
+    4300128: living room_office wall
+    4300130: bedrm_office_divide
+    4300132: Internal gym wall
+    4300134: Bathroom wall
+    4300136: Primary Shell.001
+    4300138: Bed _office wall
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
