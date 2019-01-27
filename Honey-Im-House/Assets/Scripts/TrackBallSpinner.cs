@@ -18,29 +18,26 @@ public class TrackBallSpinner : MonoBehaviour
 
     public RagdollOnCommand rdoc;
 
-    public bool hasItMovedYet;
+    public float h, v;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
         prevPos = Input.mousePosition;
         rdoc = FindObjectOfType<RagdollOnCommand>();
-        hasItMovedYet = false;
+
     }
 
     void Update()
-    {
+    { 
+        
         if (Input.GetMouseButton(0))
         {
-            if(!hasItMovedYet)
-            {
-                hasItMovedYet = true;
-                rdoc.GoRagdoll();
-            }
             posDelta = Input.mousePosition - prevPos;
             if (Vector3.Dot(transform.up, Vector3.up) >= 0)
             {
                 transform.Rotate(transform.up, -Vector3.Dot(posDelta, Camera.main.transform.right), Space.World);
+                //rb.MoveRotation(Quaternion.Euler(-Vector3.Dot(posDelta, Camera.main.transform.right)));
             }
             else
             {
@@ -51,12 +48,36 @@ public class TrackBallSpinner : MonoBehaviour
         }
 
         prevPos = Input.mousePosition;
+        
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
+        /*
+        h = Input.GetAxis("LeftStickHorizontal") * rotationSpeed * Time.deltaTime;
+        v = Input.GetAxis("LeftStickVertical") * rotationSpeed * Time.deltaTime;
+
+        rb.AddTorque(transform.up * h);
+        rb.AddTorque(transform.right * v);
+        */
+        
         if (Input.GetButton("Return") || Input.GetMouseButton(1))
             ReturnToOriginalRotation();
+            
+    }
+
+    /*
+    void OnMouseDrag()
+    {
+        posDelta = Input.mousePosition - prevPos;
+
+        rb.AddTorque(posDelta * rotationSpeed);
+    }
+    */
+
+    void LateUpdate()
+    {
+        //prevPos = Input.mousePosition;
     }
 
     //Return cube to its original orientation
@@ -67,6 +88,8 @@ public class TrackBallSpinner : MonoBehaviour
             Quaternion current = transform.rotation;
             //Spherical lerp call to smoothly rotate the cube while the "Return" button is held down
             Quaternion newRotation = Quaternion.Slerp(current, Quaternion.Euler(origin), lerpRate);
+            //Debug.Log(newRotation.ToString() + " " + newRotation.eulerAngles.ToString());
+            //rb.MoveRotation(newRotation);
             transform.rotation = newRotation;
         }
     }
