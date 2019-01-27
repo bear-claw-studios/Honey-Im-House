@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: 8cc1182bdebd6b644ba7a516adf72480
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ' Pinky 3 L'
+    100002: ' Pinky 3 R'
+    100004: Armature.004
+    100006: Foot L
+    100008: Foot R
+    100010: ForeArm L
+    100012: ForeArm R
+    100014: Head
+    100016: Head_end
+    100018: Hemi
+    100020: Hip
+    100022: Indexfg 1 L
+    100024: Indexfg 1 L_end
+    100026: Indexfg 1 R
+    100028: Indexfg 1 R_end
+    100030: Indexfg 2 L
+    100032: Indexfg 2 R
+    100034: Indexfg 3 L
+    100036: Indexfg 3 R
+    100038: James
+    100040: kin L
+    100042: kin L_end
+    100044: kin R
+    100046: kin R_end
+    100048: Midfg 1 L
+    100050: Midfg 1 L_end
+    100052: Midfg 1 R
+    100054: Midfg 1 R_end
+    100056: Midfg 2 L
+    100058: Midfg 2 R
+    100060: Midfg 3 L
+    100062: Midfg 3 R
+    100064: MSandalL
+    100066: MSandalR
+    100068: Neck
+    100070: Pinky 1 L
+    100072: Pinky 1 L_end
+    100074: Pinky 1 R
+    100076: Pinky 1 R_end
+    100078: Pinky 2 L
+    100080: Pinky 2 R
+    100082: Poletarget L
+    100084: Poletarget L_end
+    100086: Poletarget R
+    100088: Poletarget R_end
+    100090: Ringfg 1 L
+    100092: Ringfg 1 L_end
+    100094: Ringfg 1 R
+    100096: Ringfg 1 R_end
+    100098: Ringfg 2 L
+    100100: Ringfg 2 R
+    100102: Ringfg 3 L
+    100104: Ringfg 3 R
+    100106: Shin L
+    100108: Shin R
+    100110: Shoulder L
+    100112: Shoulder R
+    100114: //RootNode
+    100116: Spine
+    100118: Spine Base
+    100120: Thigh L
+    100122: Thigh R
+    100124: Thumb 1 L
+    100126: Thumb 1 L_end
+    100128: Thumb 1 R
+    100130: Thumb 1 R_end
+    100132: Thumb 2 L
+    100134: Thumb 2 R
+    100136: Thumb 3 L
+    100138: Thumb 3 R
+    100140: Toes L
+    100142: Toes L_end
+    100144: Toes R
+    100146: Toes R_end
+    100148: Towel
+    100150: UpperArm L.
+    100152: UpperArm R
+    100154: Wrist L
+    100156: Wrist R
+    400000: ' Pinky 3 L'
+    400002: ' Pinky 3 R'
+    400004: Armature.004
+    400006: Foot L
+    400008: Foot R
+    400010: ForeArm L
+    400012: ForeArm R
+    400014: Head
+    400016: Head_end
+    400018: Hemi
+    400020: Hip
+    400022: Indexfg 1 L
+    400024: Indexfg 1 L_end
+    400026: Indexfg 1 R
+    400028: Indexfg 1 R_end
+    400030: Indexfg 2 L
+    400032: Indexfg 2 R
+    400034: Indexfg 3 L
+    400036: Indexfg 3 R
+    400038: James
+    400040: kin L
+    400042: kin L_end
+    400044: kin R
+    400046: kin R_end
+    400048: Midfg 1 L
+    400050: Midfg 1 L_end
+    400052: Midfg 1 R
+    400054: Midfg 1 R_end
+    400056: Midfg 2 L
+    400058: Midfg 2 R
+    400060: Midfg 3 L
+    400062: Midfg 3 R
+    400064: MSandalL
+    400066: MSandalR
+    400068: Neck
+    400070: Pinky 1 L
+    400072: Pinky 1 L_end
+    400074: Pinky 1 R
+    400076: Pinky 1 R_end
+    400078: Pinky 2 L
+    400080: Pinky 2 R
+    400082: Poletarget L
+    400084: Poletarget L_end
+    400086: Poletarget R
+    400088: Poletarget R_end
+    400090: Ringfg 1 L
+    400092: Ringfg 1 L_end
+    400094: Ringfg 1 R
+    400096: Ringfg 1 R_end
+    400098: Ringfg 2 L
+    400100: Ringfg 2 R
+    400102: Ringfg 3 L
+    400104: Ringfg 3 R
+    400106: Shin L
+    400108: Shin R
+    400110: Shoulder L
+    400112: Shoulder R
+    400114: //RootNode
+    400116: Spine
+    400118: Spine Base
+    400120: Thigh L
+    400122: Thigh R
+    400124: Thumb 1 L
+    400126: Thumb 1 L_end
+    400128: Thumb 1 R
+    400130: Thumb 1 R_end
+    400132: Thumb 2 L
+    400134: Thumb 2 R
+    400136: Thumb 3 L
+    400138: Thumb 3 R
+    400140: Toes L
+    400142: Toes L_end
+    400144: Toes R
+    400146: Toes R_end
+    400148: Towel
+    400150: UpperArm L.
+    400152: UpperArm R
+    400154: Wrist L
+    400156: Wrist R
+    2100000: MTshirt2_01_-_Default
+    2100002: MSandalR_SandalBottom
+    2100004: MSandalR_SandalTop
+    2100006: MSandalR_trim
+    2100008: MSandalR_StrapFoot
+    2100010: MSandalR_StrapToe
+    2100012: MSandalL_SandalBottom
+    2100014: MSandalL_SandalTop
+    2100016: MSandalL_trim
+    2100018: MSandalL_StrapFoot
+    2100020: MSandalL_StrapToe
+    2100022: James_Body
+    2100024: James_Head
+    2100026: James_Gums
+    2100028: James_Tongue
+    2100030: James_TeethBottom
+    2100032: James_TeethTop
+    2100034: James_TopEyelashes
+    2100036: James_BottomEyelashes
+    2100038: James_FingerNails
+    2100040: James_ToeNails
+    2100042: James_Pupil
+    2100044: James_Iris
+    2100046: James_Eyeball
+    4300000: Towel
+    4300002: MSandalR
+    4300004: MSandalL
+    4300006: James
+    7400000: Armature.004|Armature.000|Armature.004|SideParting|Take 001|Layer01.001|Arma
+    7400002: Armature.004|Armature.000|Armature.004|SideParting|Take 001|Layer01|Arma.000
+    7400004: Armature.004|Armature.000|Armature.004|SideParting|Take 001|Layer01|Armature
+    7400006: Armature.004|Armature.000|Armature.004|Skirt1Action|Armature.004|Skirt1Actio
+    7400008: Armature.004|SideParting|Take 001|Layer01
+    7400010: Armature.004|SideParting|Take 001|Layer01.001
+    9500000: //RootNode
+    10800000: Hemi
+    13700000: James
+    13700002: MSandalL
+    13700004: MSandalR
+    13700006: Towel
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
