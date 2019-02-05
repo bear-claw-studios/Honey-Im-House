@@ -7,7 +7,7 @@ public class CollisionAudio : MonoBehaviour
     Rigidbody rb;
 
     AudioSource audio;
-    public AudioClip[] grunts;
+    public AudioClip[] impacts;
 
     public float gruntCooldown, timeOfLastGrunt, magnitudeThreshold;
 
@@ -37,7 +37,7 @@ public class CollisionAudio : MonoBehaviour
 
     public void AssignNewGrunt()
     {
-        audio.clip = grunts[Random.Range(0, grunts.Length - 1)];
+        audio.clip = impacts[Random.Range(0, impacts.Length - 1)];
     }
 
     void OnTriggerEnter(Collider other)
