@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GoodHouse.unity
     guid: 359f3ab7a32252a488cedd17ebf7abde
+  - enabled: 1
+    path: Assets/Scenes/GoodishHouse.unity
+    guid: 0ad22ebd8864830408b5f63c39c4c6bb
   m_configObjects: {}
