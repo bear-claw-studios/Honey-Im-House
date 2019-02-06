@@ -37,7 +37,8 @@ public class CollisionAudio : MonoBehaviour
 
     public void AssignNewGrunt()
     {
-        audio.clip = impacts[Random.Range(0, impacts.Length - 1)];
+        if(impacts.Length > 0)
+            audio.clip = impacts[Random.Range(0, impacts.Length - 1)];
     }
 
     void OnTriggerEnter(Collider other)

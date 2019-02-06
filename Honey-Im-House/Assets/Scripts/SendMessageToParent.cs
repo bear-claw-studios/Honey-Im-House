@@ -8,6 +8,6 @@ public class SendMessageToParent : MonoBehaviour
     {
         float magnitude = collision.relativeVelocity.magnitude;
         SendMessageUpwards("Grunt", magnitude);
-        Debug.Log(magnitude);
+        //Debug.Log(magnitude);
     }
 }

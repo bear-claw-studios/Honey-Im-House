@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class TrackBall3 : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class TrackBall3 : MonoBehaviour
 
     //The force to add upon letting go
     public Vector3 lastTorque;
+
+    //for the UI button to rotate back
+    public bool returnPressed;
 
     void Awake()
     {
@@ -64,7 +68,7 @@ public class TrackBall3 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetButton("Return") || Input.GetMouseButton(1))
+        if (Input.GetButton("Return") || Input.GetMouseButton(1) || returnPressed)
         {
             if (!rb.freezeRotation)
             {
@@ -91,5 +95,20 @@ public class TrackBall3 : MonoBehaviour
             var target = Quaternion.Euler(origin) * Quaternion.Inverse(rb.rotation);
             rb.AddTorque(target.x, target.y, target.z, ForceMode.VelocityChange);
         }
+    }
+
+    public void Freeze()
+    {
+        rb.freezeRotation = true;
+    }
+
+    public void ReturnPressed()
+    {
+        returnPressed = true;
+    }
+
+    public void ReturnReleased()
+    {
+        returnPressed = false;
     }
 }
