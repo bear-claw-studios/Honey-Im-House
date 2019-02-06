@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -261,10 +261,11 @@ MonoBehaviour:
   rotationSpeed: 0.2
   rdoc: {fileID: 0}
   hasItMovedYet: 0
-  TorqueCoefficient: 300
+  TorqueCoefficient: 600
   MaxAngularVelocity: 3
   torqueMagnitude: 0
   torqueThreshold: 1
+  lastTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &2052408025
 GameObject:
   m_ObjectHideFlags: 0

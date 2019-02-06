@@ -27,6 +27,9 @@ public class TrackBall3 : MonoBehaviour
     public float torqueMagnitude;
     public float torqueThreshold;
 
+    //The force to add upon letting go
+    public Vector3 lastTorque;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -38,15 +41,25 @@ public class TrackBall3 : MonoBehaviour
 
     void OnMouseDrag()
     {
+        //rb.rotation *= Quaternion.Euler(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0.0f);
+
         var newTorque = Vector3.up * -Input.GetAxis("Mouse X") + Vector3.right * Input.GetAxis("Mouse Y");
+
+        if (newTorque == Vector3.zero)
+            rb.freezeRotation = true;
+        else
+            rb.freezeRotation = false;
+
+        lastTorque = newTorque;
         torqueMagnitude = newTorque.magnitude;
-        if(torqueMagnitude > torqueThreshold)
+        if (torqueMagnitude > torqueThreshold)
             rb.AddTorque(newTorque.normalized * TorqueCoefficient);
     }
 
-    private void OnMouseUp()
+    void OnMouseUp()
     {
-        rb.freezeRotation = true;
+        //rb.freezeRotation = true;
+        rb.AddTorque(lastTorque.normalized * TorqueCoefficient);
     }
 
     private void FixedUpdate()
