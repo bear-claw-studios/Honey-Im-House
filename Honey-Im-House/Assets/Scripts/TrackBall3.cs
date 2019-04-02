@@ -20,9 +20,10 @@ public class TrackBall3 : MonoBehaviour
 
     public float lerpRate;
     public float rotationSpeed;
-    public RagdollOnCommand rdoc;
-    public bool hasItMovedYet;
+    //Force of torque when mouse is let up
     public float TorqueCoefficient;
+    //Force of torque while mouse is being dragged
+    public float TorqueDragCoefficient;
     public float MaxAngularVelocity;
 
     public float torqueMagnitude;
@@ -30,6 +31,10 @@ public class TrackBall3 : MonoBehaviour
 
     //The force to add upon letting go
     public Vector3 lastTorque;
+
+    //Position of previous touch
+    public Vector2 lastPos;
+
 
     //for the UI button to rotate back
     public bool returnPressed;
@@ -39,14 +44,10 @@ public class TrackBall3 : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.maxAngularVelocity = MaxAngularVelocity;
         prevPos = Input.mousePosition;
-        rdoc = FindObjectOfType<RagdollOnCommand>();
-        hasItMovedYet = false;
     }
 
     void OnMouseDrag()
     {
-        //rb.rotation *= Quaternion.Euler(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0.0f);
-
         var newTorque = Vector3.up * -Input.GetAxis("Mouse X") + Vector3.right * Input.GetAxis("Mouse Y");
 
         if (newTorque == Vector3.zero)
@@ -54,15 +55,18 @@ public class TrackBall3 : MonoBehaviour
         else
             rb.freezeRotation = false;
 
+        //Update lastTorque so it can be used in OnMouseUp
         lastTorque = newTorque;
         torqueMagnitude = newTorque.magnitude;
-        if (torqueMagnitude > torqueThreshold)
-            rb.AddTorque(newTorque.normalized * TorqueCoefficient);
+        //if (torqueMagnitude > torqueThreshold)
+            rb.AddTorque(newTorque.normalized * TorqueDragCoefficient);
+        
+        //A worthy attempt
+        //rb.rotation = Quaternion.Euler(rb.rotation.eulerAngles + new Vector3(Input.GetAxis("Mouse Y"), -Input.GetAxis("Mouse X"), 0.0f));
     }
 
     void OnMouseUp()
     {
-        //rb.freezeRotation = true;
         rb.AddTorque(lastTorque.normalized * TorqueCoefficient);
     }
 
